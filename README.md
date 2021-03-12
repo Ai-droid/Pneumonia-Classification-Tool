@@ -1,0 +1,4 @@
+# Pneumonia-Classification-Tool
+## College Minor Project
+
+The main purpose of this project is to demonstrate the practical implementation of computer vision into x-ray classification. It is a prototype project developed as a tool to diagnose x-ray for pneumonia. This tool can diagnose pneumonia in seconds enabling doctors to act fast helping the patients, also for the patients they can get an instant result and know what they are suffering from and contact an expert. This tool helps the radiology department become even more efficient in helping people. It requires a single source of data repository for streamlining your processes and for all reporting purposes. It has a simple user interface and is intuitive. This ensures that the users spend less time in learning the system and hence, increase their response time. 
