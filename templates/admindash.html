@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Admin Dashboard</title>
+   <style>
+       .submitbtn {  
+  background-color: #3274d6;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: auto;  
+  opacity: 1;  
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}  
+.submitbtn:hover {  
+  opacity: 50;
+  background-color: #2868c7;
+  transition: background-color 0.2s;
+}  
+   </style>
+</head>
+<body>
+    <center>
+   <form action="{{url_for('logout')}}" >
+       <div class="main">
+           <h2 style="text-align: center; margin-top: 25px; color: rgb(85, 12, 124); padding-top: 25px;">Patient Details </h2>
+           <table border="2" cellpadding="7" cellspacing="10" align="center">
+            <thead>
+              <tr>
+                <th>Reg no</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Doctor</th>
+                <th>Referal</th>
+                <th>Doctor Phone</th>
+                <th>Doctor Comment</th>
+                <th>Additional Comment</th>
+                <th>Prediction Results</th>
+              </tr>
+            </thead>
+            {% for row in data %}
+            <tr>
+            {% for d in row %}
+            <td>{{d}}</td>
+            
+            {% endfor %}
+            </tr>
+            {% endfor %}
+            </table>
+           <button class="submitbtn" type="submit" style="margin-top: 25px;">Logout</button>
+       </div>
+   </form>
+</center>
+</body>
+</html>
